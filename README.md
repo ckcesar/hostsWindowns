@@ -7,6 +7,7 @@ Configurando Host no Windows
 
 *Entrar em C:\xampp\apache\conf e procurar por:
 DocumentRoot "C:/www" ==> (esse é o diretório onde encontra o meu projeto)
+
 <Directory "C:/www">    
     Options Indexes FollowSymLinks Includes ExecCGI
     AllowOverride All
@@ -15,6 +16,7 @@ DocumentRoot "C:/www" ==> (esse é o diretório onde encontra o meu projeto)
 
 *Entrar em C:\xampp\apache\conf\extra\httpd-vhosts.conf
 Criar:
+
 <VirtualHost *:80>
     ServerAdmin desafio.site
     DocumentRoot "C:\www\cesar\assessment-backend-xp\site\public_html" ==> (diretório onde encontra o projeto)
